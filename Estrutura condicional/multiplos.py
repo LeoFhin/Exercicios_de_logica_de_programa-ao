@@ -20,7 +20,7 @@
 num1 = int(input('Digite um numero inteiro: '))
 num2 = int(input('Digite um outro numero inteiro: '))
 
-if num1 % num2 == 0:
+if num1 % num2 == 0 or num2 % num1 == 0:
     print('São multiplos')
 else:
     print('Não sao multiplos')
