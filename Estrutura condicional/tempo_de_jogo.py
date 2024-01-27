@@ -25,3 +25,9 @@
 hora_inicio = int(input('Digite a hora do começo do jogo: '))
 hora_termino = int(input('Digite a hora do termino do jogo: '))
 
+if hora_termino > hora_inicio:
+    duracao = hora_termino - hora_inicio
+else:
+    duracao = (24 - hora_inicio) + hora_termino
+
+print(f'O jogo durou {duracao} horas.')
